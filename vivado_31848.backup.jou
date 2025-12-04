@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Oct 29 12:30:16 2025
+# Process ID         : 31848
+# Current directory  : C:/Users/jacob/Downloads/project_MUX
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24964 C:\Users\jacob\Downloads\project_MUX\project_MUX.xpr
+# Log file           : C:/Users/jacob/Downloads/project_MUX/vivado.log
+# Journal file       : C:/Users/jacob/Downloads/project_MUX\vivado.jou
+# Running On         : LAPTOP-JIVQAT26
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-10870H CPU @ 2.20GHz
+# CPU Frequency      : 2208 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17007 MB
+# Swap memory        : 4160 MB
+# Total Virtual      : 21168 MB
+# Available Virtual  : 7136 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jacob/Downloads/project_MUX/project_MUX.xpr
+update_compile_order -fileset sources_1
+synth_design -top mux_2to1 -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+startgroup
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs rtl_1]
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs rtl_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+set_property target_constrs_file C:/Users/jacob/Downloads/project_MUX/project_MUX.srcs/constrs_1/imports/Downloads/Nexys-A7-100T-Master.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+synth_design -top mux_2to1 -part xc7a100tcsg324-1 -lint 
+close_design
+open_run impl_1
