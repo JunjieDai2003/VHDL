@@ -1,0 +1,20 @@
+Diseñar el controlador de un ascensor único en una vivienda de 4 pisos. Las entradas al circuito serán, 
+por un lado, el piso al que el usuario desea ir mediante 4 botones, y el piso al que el ascensor está en un 
+momento dado. Hay 2 salidas: por un lado, la del motor (2 bits) y por otro, la de la puerta (1 bit). El 
+funcionamiento es: 
+• El ascensor debe ir al piso indicado por los botones, cuando llegue abrirá las puertas que 
+permanecerán así hasta que se reciba otra llamada 
+• Si mientras que el ascensor se mueve, se pulsan otros botones no se debe hacer caso. 
+• Utilizar los LEDs y los Displays para visualizar la información.
+
+Se debe realizar un módulo top que gestiona las instancias.
+Por ahora el flujo sería:
+1. Motor 00 en reposo. Pulso P1 hasta P4 al azar, habrá 1 bit en 1 y resto en 0.
+2. Ese bit pasa por sincronizador.
+3. Pasa por detector de flanco.
+4. El flanco llega a la máquina de estado. Debido a que tenemos una maquina de Moore, la salida es el propio estado.
+    Aquí se encarga de gestionar si el motor debe subir 10 o bajar 01, si hemos llegado a la planta deseada.
+    Los estados actuales son reposo, subiendo, bajando y analizando.
+    Y manda las salidas a la placa para mostrar leds del motor y de la puerta.
+    Y también debe enviar mensaje el display para mostrar la planta.
+5. Es posible q fsm haga demasiados trabajos, el proceso de contar será una nueva posible instancia.
