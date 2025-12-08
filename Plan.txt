@@ -18,3 +18,14 @@ Por ahora el flujo sería:
     Y manda las salidas a la placa para mostrar leds del motor y de la puerta.
     Y también debe enviar mensaje el display para mostrar la planta.
 5. Es posible q fsm haga demasiados trabajos, el proceso de contar será una nueva posible instancia.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Me metido el archivo de la práctica 3 para comprobar que la maquina de estado funciona
+El FSM2 y FMS del archivo general tiene o bien errores, o bien saturación de funciones en un mismo modulo.
+Para comprobar el funcionamiento debo cambiar aun la maquina de restricción y revisar la lógica.
+también me falta averiguar antirebote, mostrar numero de mi piso y piso final (se hace con parpadeos).
+no se s fsm cuenta como una superfuncion, hay q preguntar.
+es interesante crear nueva instancia de puerta que detecta la presencia de objeto, esto significa que si hay objeto, la maquina de estado debería permanecer en reposo,
+será añadiendo un nuevo input en la comprobación de case
