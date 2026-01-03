@@ -10,11 +10,13 @@ entity FSM is
         piso_actual : out std_logic_vector(3 downto 0);
         piso_final  : out std_logic_vector(3 downto 0);
 
-        motor  : out std_logic_vector(1 downto 0);
+        motor  : out std_logic_vector(1 downto 0);-- salida led y para temporizador
         puerta : out std_logic;
 
+       -- planta_1, planta_2, planta_3, planta_4: in std_logic;
         planta_1, planta_2, planta_3, planta_4: in std_logic;
-        sensor_motor: in std_logic
+        sensor_motor: in std_logic;
+        timeout_in : in std_logic
     );
 end FSM;
 
@@ -46,7 +48,7 @@ begin
     end process;
 
     nextstate_ascensor: process(current_state, s_piso_actual, s_piso_final,
-                                planta_1, planta_2, planta_3, planta_4, sensor_motor)
+                                planta_1, planta_2, planta_3, planta_4, sensor_motor, timeout_in)
         --variable para cambiar su valor dentro de process y hacer comparacion en reposo                        
         variable objetivo : unsigned(3 downto 0);
     begin
@@ -82,13 +84,13 @@ begin
                 end if;
 
             when SUBIENDO =>
-                if sensor_motor = '1' then
+                if sensor_motor = '1' or timeout_in = '1' then
                     next_s_piso_actual <= s_piso_actual + 1;
                     next_state <= ANALIZANDO;
                 end if;
 
             when BAJANDO =>
-                if sensor_motor = '1' then
+                if sensor_motor = '1' or timeout_in = '1' then
                     next_s_piso_actual <= s_piso_actual - 1;
                     next_state <= ANALIZANDO;
                 end if;
@@ -122,8 +124,7 @@ begin
             when ANALIZANDO =>
                 motor  <= "00";
                 puerta <= '0';
-                
-    end case;
+        end case;
     end process;
 
     piso_actual <= std_logic_vector(s_piso_actual);

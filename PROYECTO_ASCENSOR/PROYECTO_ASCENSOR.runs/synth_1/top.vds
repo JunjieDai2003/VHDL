@@ -1,0 +1,292 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Jan  4 00:17:40 2026
+# Process ID         : 65852
+# Current directory  : C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.runs/synth_1/top.vds
+# Journal file       : C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.runs/synth_1\vivado.jou
+# Running On         : Junjie
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16869 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37270 MB
+# Available Virtual  : 4274 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 493.234 ; gain = 212.895
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 75956
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1194.934 ; gain = 493.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:18]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/FSM.vhd:5' bound to instance 'Inst_FSM' of component 'FSM' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/FSM.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/FSM.vhd:23]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/DECODER.vhd:5' bound to instance 'Inst_decoder' of component 'decoder' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/DECODER.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/DECODER.vhd:11]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_SYNCHRNZR_MOTOR' of component 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:11]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_SYNCHRNZR1' of component 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_SYNCHRNZR2' of component 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:115]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_SYNCHRNZR3' of component 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:120]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Inst_SYNCHRNZR4' of component 'SYNCHRNZR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:125]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_EDGEDTCTR_MOTOR' of component 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_EDGEDTCTR1' of component 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:137]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_EDGEDTCTR2' of component 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:142]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_EDGEDTCTR3' of component 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:147]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'Inst_EDGEDTCTR4' of component 'EDGEDTCTR' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:152]
+INFO: [Synth 8-3491] module 'Timer' declared at 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/Timer.vhd:5' bound to instance 'Inst_Timer' of component 'Timer' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/Timer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/Timer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1301.965 ; gain = 600.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1301.965 ; gain = 600.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1301.965 ; gain = 600.453
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1301.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1367.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1367.875 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1367.875 ; gain = 666.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1367.875 ; gain = 666.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1367.875 ; gain = 666.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  reposo |                               00 |                               00
+                 bajando |                               01 |                               10
+              analizando |                               10 |                               11
+                subiendo |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1367.875 ; gain = 666.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1368.320 ; gain = 666.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1506.754 ; gain = 805.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1506.902 ; gain = 805.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1516.961 ; gain = 815.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | Inst_EDGEDTCTR_MOTOR/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_EDGEDTCTR1/sreg_reg[0]      | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_EDGEDTCTR2/sreg_reg[0]      | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_EDGEDTCTR3/sreg_reg[0]      | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|top         | Inst_EDGEDTCTR4/sreg_reg[0]      | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     6|
+|4     |LUT2   |    50|
+|5     |LUT3   |     7|
+|6     |LUT4   |     7|
+|7     |LUT5   |     7|
+|8     |LUT6   |     5|
+|9     |SRL16E |     5|
+|10    |FDCE   |    38|
+|11    |FDRE   |    20|
+|12    |IBUF   |     7|
+|13    |OBUF   |    10|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 1751.484 ; gain = 984.062
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 1751.484 ; gain = 1049.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1760.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1764.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b45f5d27
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 1764.293 ; gain = 1271.059
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1764.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  4 00:19:06 2026...

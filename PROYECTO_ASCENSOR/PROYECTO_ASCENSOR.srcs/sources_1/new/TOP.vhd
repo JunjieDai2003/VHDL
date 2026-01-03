@@ -20,6 +20,9 @@ signal syn_edg1, syn_edg2,syn_edg3 ,syn_edg4,syn_edg_motor: STD_LOGIC;
 SIGNAL edg_fsm1,edg_fsm2,edg_fsm3,edg_fsm4,edg_fsm_motor: std_logic;
 signal piso_actual_s : std_logic_vector(3 downto 0);
 signal piso_final_s  : std_logic_vector(3 downto 0);
+signal timer_timeout : std_logic;
+signal timer_enable  : std_logic;
+signal motor_s       : std_logic_vector(1 downto 0); -- Internal motor signal to read for enable
 --signal code_in : std_logic_vector(3 downto 0);
 
 COMPONENT decoder
@@ -43,7 +46,8 @@ clk: in std_logic ;
     
     -- ENTRADA DE USUARIO
     planta_1, planta_2, planta_3, planta_4: in std_logic;
-    sensor_motor: in std_logic -- Detector de paso de piso
+    sensor_motor: in std_logic; -- Detector de paso de piso
+    timeout_in : in std_logic
 );
 END COMPONENT;
 
@@ -65,6 +69,15 @@ EDGE : OUT std_logic
 
 END COMPONENT;
 
+COMPONENT Timer IS
+PORT ( 
+clk : in STD_LOGIC;
+rst : in STD_LOGIC;
+enable : in STD_LOGIC;
+tiempo_limite : out STD_LOGIC
+);
+END COMPONENT;
+
 begin 
 
 Inst_FSM: FSM PORT MAP (
@@ -75,12 +88,15 @@ planta_2 => edg_fsm2,
 planta_3 => edg_fsm3,
 planta_4 => edg_fsm4,
 sensor_motor => edg_fsm_motor,
+timeout_in => timer_timeout,
 --salidas
 puerta => puerta,
 piso_actual => piso_actual_s,
 piso_final =>piso_final_s,
-motor => motor
+motor => motor_s
 );
+
+motor <= motor_s; -- Assign internal signal to output port
 
 Inst_decoder : decoder PORT MAP ( 
 code => piso_actual_s,
@@ -140,4 +156,28 @@ EDGE => edg_fsm4
 );
 
 
+timer_enable <= motor_s(0) or motor_s(1); --01 11
+--no puedo conectar una expresion lógica para conectar con un puerto, por eso
+-- primero aisgno valor a una señal
+Inst_Timer : Timer PORT MAP (
+clk => clk,
+rst => rst,
+enable => timer_enable,
+tiempo_limite => timer_timeout
+);
+
+
 end structural;
+
+
+
+
+
+
+
+
+
+
+
+
+
