@@ -123,7 +123,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.runs/synth_1/top.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc
+  read_xdc C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

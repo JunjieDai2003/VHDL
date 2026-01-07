@@ -90,10 +90,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/daiju/Documents/GitHub/VHDL/PROYECTO_ASCENSOR/PROYECTO_ASCENSOR.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
