@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Dec 11 21:29:26 2025
+# Process ID         : 41636
+# Current directory  : C:/Users/daiju/Desktop/sed/prEstados - copia
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent50824 C:\Users\daiju\Desktop\sed\prEstados - copia\prEstados.xpr
+# Log file           : C:/Users/daiju/Desktop/sed/prEstados - copia/vivado.log
+# Journal file       : C:/Users/daiju/Desktop/sed/prEstados - copia\vivado.jou
+# Running On         : Junjie
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16869 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37270 MB
+# Available Virtual  : 16381 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/daiju/Desktop/sed/prEstados - copia/prEstados.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_simulation
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/daiju/Desktop/sed/prEstados - copia/prEstados.srcs/sim_1/new/top_tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/daiju/Desktop/sed/prEstados - copia/prEstados.srcs/sim_1/new/top_tb.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/daiju/Desktop/sed/prEstados - copia/prEstados.srcs/sim_1/new/tb_top.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/daiju/Desktop/sed/prEstados - copia/prEstados.srcs/sim_1/new/tb_top.vhd}}
+update_compile_order -fileset sim_1
+set_property top tb_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim
+launch_simulation
+source tb_top.tcl
+close_sim

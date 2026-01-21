@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/DECODER.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/EDGEDTCTR.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/FSM.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/SYNCHRNZR.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/TOP.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sources_1/new/Timer.vhd" \
+"../../../../PROYECTO_ASCENSOR.srcs/sim_1/new/TB_TOP.vhd" \
+
+# Do not sort compile order
+nosort

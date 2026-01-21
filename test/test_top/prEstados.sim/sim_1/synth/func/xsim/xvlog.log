@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/daiju/Desktop/LAB DE SED EXAMEN/prEstados - copia/prEstados - copia/prEstados.sim/sim_1/synth/func/xsim/top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EDGEDTCTR
+INFO: [VRFC 10-311] analyzing module SYNCHRNZR
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl
